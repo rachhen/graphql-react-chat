@@ -1,0 +1,81 @@
+$blue: #1877f2;
+$green: #42b72a;
+
+$border-radius: 0;
+$paragraph-margin-bottom: 0;
+
+$gray-600: rgb(245, 245, 245);
+
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    203deg,
+    rgba(131, 58, 180, 0.9) 0%,
+    rgba(253, 29, 29, 0.9) 50%,
+    rgba(252, 176, 69, 0.9) 100%
+  );
+}
+
+.users-div:hover {
+  background-color: rgb(250, 250, 250);
+}
+
+.messages-box {
+  height: 500px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.user-image {
+  width: 50px;
+  height: 50px;
+  object-fit: 'cover';
+}
+
+.message-input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.info-text {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.react-btn-popover {
+  height: 30px;
+}
+
+.react-icon-btn {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 1rem;
+  transition: 0.25s;
+
+  &:hover {
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.reaction-div {
+  position: absolute;
+  right: -8px;
+  bottom: -12px;
+  font-size: 0.7rem;
+}
