@@ -8,7 +8,7 @@
     "bcryptjs": "^2.4.3",
     "emoji-regex": "^7.0.3",
     "graphql": "^15.5.0",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "mysql2": "^2.2.5",
     "sequelize": "^6.6.2"
   },
